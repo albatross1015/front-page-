@@ -1,7 +1,148 @@
 *{
     box-sizing: border-box;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.sr-only {
+    display: hidden;
 }
 .fab {
     font-size: 7em;
+}
+nav {
+    display:flex;
+    padding: 10px 0px;
+    background: black;
+}
+nav img {
+    height: 60px;
+}
+.navigation {
+    margin-left:  auto;
+}
+.navigation li{
+    list-style-type: none;
+    display: inline;
+    margin: 5px 0px 5px 15px;
+    font-size: 125%;
+}
+.navigation li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.banner-element {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.banner-element #tagline {
+    font-size: 500%;
+    font-weight: 900;
+}
+.sub-heading {
+    color: grey;
+    font-size: 110%;
+}
+.cta-container {;
+    margin: 40px 0px;
+    padding: 40px 0px;
+}
+.cta-container .cta-h, .social .social-head .social-h{
+    font-size: 250%;
+}
+.cta-container form {
+    margin: 10px 0px;
+}
+.cta-container form *{
+    margin: 5px 0px;
+}
+.cta-container form input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    font-size: 120%;
+    background: rgba(240, 240, 240, 1);
+    border: 2px solid grey;
+}
+.cta-container form input[type="submit"], .contact form button {
+    padding: 10px;
+    font-size: 120%;
+    background: orangered;
+    color: white;
+    border: 0;
+}
+.cta-container form input[type="submit"]:active, .contact form button:active {
+    transform: scale(0.9);
+}
+.cta {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.story-container, .team-container {
+    margin: 30px 0px;
+}
+.social {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.social-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social-list {
+    margin: 20px 0;
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.social-list li {
+    display: block;
+    justify-items: center;
+    margin: 0px 20px;
+}
+.gallery .gallery-manager img{
+    width: 300px !important;
+    height: 300px !important;
+}
+.gallery-manager {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact h1{
+    font-weight: 900;
+    font-size: 300%;
+    margin-bottom: 70px;
+}
+.contact form {
+    margin-top: 50px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.contact form fieldset {
+    border: 0;
+}
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+}
+.contact form input{
+    font-size: 105%;
 }

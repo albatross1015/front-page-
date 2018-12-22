@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TheGameDev</title>
     <meta name="description" content="Come join us on our journey to make our first game from scratch. You're going to be a big part of it!">
@@ -12,54 +12,92 @@
 </head>
 <body>
     <nav role="navigation">
-        <ul role="list" aria-label="navigation">
-            <li role="listitem"><a href="">Home</a></li>
-            <li role="listitem"><a href="">News</a></li>
-            <li role="listitem"><a href="">Blog</a></li>
-            <li role="listitem"><a href="">Contact</a></li>
-        </ul>
+        <div class="container flex" style="align-items: center;">
+            <img src="images/thegamedevlogo.png" alt="TheGameDev">
+            <ul role="list" class="navigation" aria-label="navigation">
+                <li role="listitem"><a href="index.html">HOME</a></li>
+                <li role="listitem"><a href="">UPDATES</a></li>
+                <li role="listitem"><a href="">BLOG</a></li>
+                <li role="listitem"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
     </nav>
    <header role="banner">
-        <h1 id="tagline">THE BLOODY TAG LINE</h1>
-        <img src="images/thegamedevlogo.png" alt="TheGameDev">
+        <div class="container flex">
+            <h1 class="sr-only">The game dev</h1>
+            <div class="banner-element">
+                <h3 id="tagline">THE BLOODY TAG LINE</h3>
+            </div>
+        </div>
    </header>
    <main role="main">
         <div class="cta-container">
-            <h2 class="cta-h">Join our dev journey!</h2>
-            <form role="form">
-                    <input type="email" placeholder="Email Address.." aria-label="email address">
-                    <input type="submit" value="Subscribe" aria-label="subscribe">
-            </form>
+            <div class="container flex cta">
+                <h2 class="cta-h">Join our dev journey!</h2>
+                <h5 class="sub-heading">Subscribe to weekly newsletter for regular updates</h5>
+                <form role="form">
+                        <input type="email" placeholder="Email Address.." aria-label="email address"><br>
+                        <input type="checkbox" name="agreed" value="1">&nbsp;By checking this box, you agree to our Terms Of Use and Privacy Policy<br>
+                        <input type="submit" value="Subscribe" aria-label="subscribe" disabled>
+                </form>
+            </div>
         </div>
 
         <div class="story-container">
-            <h3 class="story">Our Story</h3>
-            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit unde quos ad illum repellendus pariatur vitae eos laborum totam, et suscipit! Doloribus recusandae distinctio modi tenetur ullam, beatae id magni eaque itaque neque reprehenderit maiores, enim consequuntur esse cupiditate pariatur ipsum eligendi quia officiis quibusdam incidunt adipisci minima deserunt quidem. Distinctio velit eius error, commodi repellat, expedita esse laborum quibusdam similique magnam ratione inventore fuga quae? Tempore incidunt quasi excepturi provident facere reiciendis nobis odit. Animi nihil ut quibusdam minus maiores commodi ratione cupiditate, suscipit dolores assumenda dicta saepe impedit consequuntur aliquid sit temporibus odit enim accusamus officiis eos magni recusandae pariatur porro quia. Amet expedita consequatur quasi, recusandae ullam eos illo enim officiis rerum eligendi corporis, quos facilis laboriosam officia, iste nesciunt optio? Culpa doloribus rerum ratione sed, corporis laudantium illum atque nemo repellat nisi quasi excepturi tenetur est. Consectetur, facilis voluptates sapiente, doloribus repellendus est rerum quas a voluptas dolorem culpa distinctio veritatis ipsum tempora dolore quisquam at error, placeat iusto. Minus unde, dignissimos facilis quo temporibus cumque. Quis reprehenderit quae libero, perspiciatis optio dolore veritatis. Modi suscipit dolore, saepe nisi quam minima iure adipisci officiis autem quaerat repellat porro veniam placeat maiores ipsam numquam tenetur inventore? Corporis. </p>
+            <div class="container">
+                <h3 class="story sr-only">Our Story</h3>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit unde quos ad illum repellendus pariatur vitae eos laborum totam, et suscipit! Doloribus recusandae distinctio modi tenetur ullam, beatae id magni eaque itaque neque reprehenderit maiores, enim consequuntur esse cupiditate pariatur ipsum eligendi quia officiis quibusdam incidunt adipisci minima deserunt quidem. Distinctio velit eius error, commodi repellat, expedita esse laborum quibusdam similique magnam ratione inventore fuga quae? Tempore incidunt quasi excepturi provident facere reiciendis nobis odit. Animi nihil ut quibusdam minus maiores commodi ratione cupiditate, suscipit dolores assumenda dicta saepe impedit consequuntur aliquid sit temporibus odit enim accusamus officiis eos magni recusandae pariatur porro quia. Amet expedita consequatur quasi, recusandae ullam eos illo enim officiis rerum eligendi corporis, quos facilis laboriosam officia, iste nesciunt optio? Culpa doloribus rerum ratione sed, corporis laudantium illum atque nemo repellat nisi quasi excepturi tenetur est. Consectetur, facilis voluptates sapiente, doloribus repellendus est rerum quas a voluptas dolorem culpa distinctio veritatis ipsum tempora dolore quisquam at error, placeat iusto. Minus unde, dignissimos facilis quo temporibus cumque. Quis reprehenderit quae libero, perspiciatis optio dolore veritatis. Modi suscipit dolore, saepe nisi quam minima iure adipisci officiis autem quaerat repellat porro veniam placeat maiores ipsam numquam tenetur inventore? Corporis. </p>
+            </div>
         </div>
 
         <div class="team-container">
-            <h3 class="team">Our Team</h3>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <div class="container">
+                <h3 class="team sr-only">Our Team</h3>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
         </div>
-
+        <div class="gallery">
+            <div class="gallery-manager flex">
+                <img src="https://source.unsplash.com/random" alt="">
+                <img src="https://source.unsplash.com/user/kalvisuals" alt="">
+                <img src="https://source.unsplash.com/user/erondu" alt="">
+                <img src="https://source.unsplash.com/user/kaitsnaughty" alt="">
+                <img src="https://source.unsplash.com/user/dosejuice" alt="">
+                <img src="https://source.unsplash.com/user/kaitsnaughty" alt="">
+                <img src="https://source.unsplash.com/user/dosejuice" alt="">
+                <img src="https://source.unsplash.com/user/marcusrfotografia" alt="">
+                <img src="https://source.unsplash.com/user/thevantagepoint718" alt="">
+                <img src="https://source.unsplash.com/user/cblack09" alt="">
+            </div>
+        </div>
         <div class="cta-container">
-            <h2 class="cta-h">Join our dev journey!</h2>
-            <form role="form">
-                    <input type="email" placeholder="Email Address.." aria-label="email address">
-                    <input type="submit" value="Subscribe" aria-label="subscribe">
-            </form>
+            <div class="container flex cta">
+                <h2 class="cta-h">Join our dev journey!</h2>
+                <h5 class="sub-heading">Subscribe to weekly newsletter for regular updates</h5>
+                <form role="form">
+                        <input type="email" placeholder="Email Address.." aria-label="email address"><br>
+                        <input type="checkbox" name="agreed" value="1">&nbsp;By checking this box, you agree to our Terms Of Use and Privacy Policy<br>
+                        <input type="submit" value="Subscribe" aria-label="subscribe" disabled>
+                </form>
+            </div>
         </div>
         <aside role="complementary">
-            <h2>Liked Us? Follow us on social media to be a part of our journey and never miss any update. 💗</h2>
-            <ul role="list">
-                <li role="menuitem"><a href=""><i class="fab fa-facebook-f" aria-label="facebook"></i></a></li>
-                <li role="menuitem"><a href=""><i class="fab fa-reddit" aria-label="reddit"></i></a></li>
-                <li role="menuitem"><a href=""><i class="fab fa-instagram" aria-label="instagram"></i></a></li>
-            </ul>
+            <div class="container social">
+                <div class="social-head">
+                    <h2 class="social-h">Liked Us? </h2>
+                    <h3 class="sub-heading">Follow us on social media to be a part of our journey and never miss any update. 💗</h3>
+                </div>
+                <ul role="list" class="social-list">
+                    <li role="menuitem"><a href=""><i class="fab fa-facebook-f" aria-label="facebook"></i></a></li>
+                    <li role="menuitem"><a href=""><i class="fab fa-reddit" aria-label="reddit"></i></a></li>
+                    <li role="menuitem"><a href=""><i class="fab fa-instagram" aria-label="instagram"></i></a></li>
+                </ul>
+            </div>
         </aside>
+
    </main>
 </body>
 </html>
